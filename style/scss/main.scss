@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:'Dancing Script', cursive;;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@import 'variables', 'mixins', 'containers';
