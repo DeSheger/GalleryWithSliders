@@ -89,6 +89,7 @@
 
 .list__item:hover {
   color: #585650;
+  cursor: pointer;
 }
 
 .about {
@@ -109,5 +110,15 @@
           align-items: center;
   height: 100vh;
   padding: 5%;
+}
+
+.about__title {
+  font-size: 3rem;
+  color: #585650;
+}
+
+.about__description {
+  font-size: 1rem;
+  color: #585650;
 }
 /*# sourceMappingURL=main.css.map */

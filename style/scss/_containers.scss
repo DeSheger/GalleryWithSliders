@@ -39,6 +39,7 @@
 
         &:hover {
             color: $font-color-dark;
+            cursor: pointer;
         }
     }
 }
@@ -50,4 +51,14 @@
     height: 100vh;
 
     padding: 5%;
+
+    &__title {
+        font-size: 3rem;
+        color: $font-color-dark;
+    }
+
+    &__description {
+        font-size: 1rem;
+        color: $font-color-dark;
+    }
 }
