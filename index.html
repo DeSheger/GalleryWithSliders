@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
+
     <title>Gallery by DeSheger</title>
 </head>
 <body>
 
     <div class="wrapper">
-        
+
+        <!--menu-->
         <nav class="menu" style="background-color:rgba(0, 0, 0, 0.5);">
             <p class="logo">Gallery</p>
             <ul class="list">
@@ -23,8 +27,10 @@
             </ul>
         </nav>
 
+        <!--serach-->
         <form action="" class="search"></form>
 
+        <!--about-->
         <div class="about">
             <h1 class="about__title">About</h1>
             <div class="about__description">
@@ -32,12 +38,25 @@
             </div>
         </div>
 
-        <div class="sliders"></div>
+        <!--sliders-->
+        <div class="sliders">
+            <button class="sliders__prev">Prev</button>
+                <img src="./photos/sliders/slider1.jpg" alt="" class="sliders__image">
+                <img src="./photos/sliders/slider2.jpg" alt="" class="sliders__image">
+                <img src="./photos/sliders/slider3.jpg" alt="" class="sliders__image">
+                <img src="./photos/sliders/slider4.jpg" alt="" class="sliders__image">
+            
+            <button class="sliders__next">Next</button>
 
+        </div>
+
+        <!--animations-->
         <div class="animations"></div>
 
+        <!--gallery-->
         <div class="gallery"></div>
 
+        <!--footer-->
         <footer class="footer"></footer>
     </div>
 

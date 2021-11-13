@@ -62,3 +62,44 @@
         color: $font-color-dark;
     }
 }
+
+//sliders
+
+.sliders {
+    @include flex-container(nowrap,row,space-evenly,center);
+
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+
+    position: relative;
+    overflow: hidden;
+
+    &__prev {
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    &__next{
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    &__image {
+        width: auto;
+        height: 30%;
+        
+        background-position: center;
+    }
+}
