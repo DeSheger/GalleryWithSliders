@@ -1,30 +1,30 @@
-//Variables
-import { descriptionText, about__description } from "./modules/variables.js";
-//Animations
-import { textAnimation } from "./modules/animations.js";
-//Slider
-import { slider, prevImage, nextImage } from "./modules/sliders.js";
+// Variables
+import { descriptionText, aboutDescription, slidersImages } from './modules/variables.js';
+// Animations
+import { textAnimation } from './modules/animations.js';
+// Slider
+import Sliders from './modules/sliders.js';
 
-
-//ABOUT
-function aboutAnimation(){
-    if(window.pageYOffset >= document.querySelector('.about').offsetTop) {
-        textAnimation(descriptionText, about__description);
-        //unmounting event listener
-        window.removeEventListener("scroll", aboutAnimation);
-    }
+// ABOUT
+function aboutAnimation() {
+  if (window.pageYOffset >= document.querySelector('.about').offsetTop) {
+    textAnimation(descriptionText, aboutDescription);
+    // unmounting event listener
+    window.removeEventListener('scroll', aboutAnimation);
+  }
 }
 
-window.addEventListener("scroll", aboutAnimation, false);
+window.addEventListener('scroll', aboutAnimation, false);
 
+// SLIDERS
+const sliders = new Sliders(slidersImages);
 
-//SLIDERS
-slider();    
+sliders.sliderReset();
 
 document.querySelector('.sliders__prev').addEventListener('click', () => {
-    prevImage();
-})
+  sliders.prevSliderButton();
+});
 
 document.querySelector('.sliders__next').addEventListener('click', () => {
-    nextImage();
-})
+  sliders.nextImageButton();
+});
