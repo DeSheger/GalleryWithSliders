@@ -4,4 +4,8 @@ const aboutDescription = document.querySelector('.about__description');
 
 const slidersImages = document.querySelectorAll('.sliders__image');
 
-export { descriptionText, aboutDescription, slidersImages };
+const slidersRadio = document.querySelectorAll('.sliders__radio');
+
+export {
+  descriptionText, aboutDescription, slidersImages, slidersRadio,
+};

@@ -135,3 +135,11 @@
         
     }
 }
+
+.animations {
+  @include flex-container(nowrap,column,space-evenly,center);
+
+    height: 100vh;
+
+    padding: 5%;
+}
