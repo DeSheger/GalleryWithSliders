@@ -12,9 +12,4 @@ function textAnimation(text, id) {
   });
 }
 
-// Sliders Animation
-function sliderAnimation(slider, id) {
-
-}
-
-export { textAnimation, sliderAnimation };
+export default textAnimation;

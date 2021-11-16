@@ -5,6 +5,8 @@
     height: 100vh;
 
     padding: 5%;
+
+    
 }
 
 .menu::before {
@@ -23,6 +25,12 @@
 
 .logo {
     font-size: 4rem;
+    text-align: center;
+    @media (min-width: 640px) {
+        
+      width: 70%;
+      font-size: 5rem;
+  }
     
 }
 
@@ -42,6 +50,10 @@
             cursor: pointer;
         }
     }
+
+    @media (min-width: 640px) {
+        width: 70%;
+    }
 }
 
 //about
@@ -49,18 +61,26 @@
     @include flex-container(nowrap,column,space-evenly,center);
 
     height: 100vh;
-
+    width: 100%;
     padding: 5%;
 
     &__title {
         font-size: 3rem;
         color: $font-color-dark;
+        @media (min-width: 640px) {
+          font-size: 4rem;
+      }
     }
 
     &__description {
         font-size: 1rem;
         color: $font-color-dark;
-    }
+        @media (min-width: 640px) {
+        
+          width: 70%;
+          font-size: 1.5rem;
+      }
+        }
 }
 
 //sliders
@@ -68,7 +88,8 @@
 .sliders {
     @include flex-container(wrap,column,space-evenly,center);
     justify-content: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
     padding: 5%;
 
@@ -82,6 +103,12 @@
         padding: 5%;
 
         position: relative;
+
+        @media (min-width: 640px) {
+        
+          width: 70%;
+          font-size: 1.5rem;
+      }
     }
 
     &__prev {
@@ -99,6 +126,7 @@
         color: $font-color-light;
         border:none;
         border-radius: 5px;
+        z-index: 1;
     }
     &__next{
         width: 50px;
@@ -115,12 +143,14 @@
         color: $font-color-light;
         border:none;
         border-radius: 5px;
+        z-index: 1;
     }
 
     &__image {
         width: 100%;
         height: auto;
         
+        animation: show 1s;
         background-position: center;
     }
 
@@ -136,10 +166,51 @@
     }
 }
 
-.animations {
+.gallery {
   @include flex-container(nowrap,column,space-evenly,center);
 
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 
     padding: 5%;
+
+    &__container {
+      display: grid;
+      width: auto;
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 5%;
+      @media (min-width: 640px) {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 70%;
+
+    }
+    }
+
+    &__image {
+      height: auto;
+      width: 100%;
+      justify-self: center;
+      align-self: stretch;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+}
+
+.footer {
+  text-align: center;
+  padding: 5%;
+  color: $font-color-light;
+  background-color: $base-color-dark;
 }

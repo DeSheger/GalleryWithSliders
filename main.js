@@ -2,13 +2,24 @@
 // Variables
 import {
   descriptionText, aboutDescription, slidersImages, slidersRadio,
+  galleryImages, listItems,
 } from './modules/variables.js';
+// Menu
+import menu from './modules/menu.js';
 // Animations
-import { textAnimation } from './modules/animations.js';
+import textAnimation from './modules/animations.js';
 // Slider
 import Sliders from './modules/sliders.js';
 
 // DOM //
+// MENU
+
+listItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    menu(item.id);
+  });
+});
+
 // ABOUT
 function aboutAnimation() {
   if (window.pageYOffset >= document.querySelector('.about').offsetTop) {
@@ -41,4 +52,6 @@ slidersRadio.forEach((radio) => {
   });
 });
 
-// ANIMATION
+// GALLERY
+galleryImages.forEach((image) => {
+});

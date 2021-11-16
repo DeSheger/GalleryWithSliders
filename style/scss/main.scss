@@ -7,13 +7,15 @@
 }
 
 .wrapper{
-    width: 100%;
-    height: auto;
-    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  flex-wrap: nowrap;
+
 }
 
-@import 'variables', 'mixins', 'containers';
+@import 'variables', 'mixins', 'animations', 'containers';

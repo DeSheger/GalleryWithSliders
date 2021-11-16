@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style/css/main.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
 
     <title>Gallery by DeSheger</title>
@@ -19,16 +17,12 @@
         <nav class="menu" style="background-color:rgba(0, 0, 0, 0.5);">
             <p class="logo">Gallery</p>
             <ul class="list">
-                <li class="list__item">Home</li>
-                <li class="list__item">About</li>
-                <li class="list__item">Sliders</li>
-                <li class="list__item">Animations</li>
-                <li class="list__item">Gallery</li>
+                <li class="list__item" id="menu">Home</li>
+                <li class="list__item" id="about">About</li>
+                <li class="list__item" id="sliders">Sliders</li>
+                <li class="list__item" id="gallery">Gallery</li>
             </ul>
         </nav>
-
-        <!--serach-->
-        <form action="" class="search"></form>
 
         <!--about-->
         <div class="about">
@@ -58,14 +52,20 @@
 
         </div>
 
-        <!--animations-->
-        <div class="animations"></div>
-
         <!--gallery-->
-        <div class="gallery"></div>
+        <div class="gallery">
+          <div class="gallery__container">
+                <img src="./photos/gallery/gallery1.jpg" alt="" class="gallery__image">
+                <img src="./photos/gallery/gallery2.jpg" alt="" class="gallery__image">
+                <img src="./photos/gallery/gallery3.jpg" alt="" class="gallery__image">
+                <img src="./photos/gallery/gallery4.jpg" alt="" class="gallery__image">
+                <img src="./photos/gallery/gallery5.jpg" alt="" class="gallery__image">
+                <img src="./photos/gallery/gallery6.jpg" alt="" class="gallery__image">
+          </div>
+        </div>
 
         <!--footer-->
-        <footer class="footer"></footer>
+        <footer class="footer">Created By DeSheger 2021</footer>
     </div>
 
 </body>
