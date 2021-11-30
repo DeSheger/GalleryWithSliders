@@ -16,6 +16,7 @@ class Gallery {
     this.image.style.display = 'block';
     this.image.style.width = '100%';
 
+    this.gallery.style.width = "100%"
     this.gallery.style.position = 'fixed';
     this.gallery.style.top = '0';
     this.gallery.style.left = '0';
