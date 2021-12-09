@@ -5,7 +5,7 @@ import {
   galleryImages, listItems,
 } from './modules/variables.js';
 // Menu
-import menu from './modules/menu.js';
+import {menu, moveMenu}from './modules/menu.js';
 // Animations
 import textAnimation from './modules/animations.js';
 // Slider
@@ -14,12 +14,23 @@ import Sliders from './modules/sliders.js';
 import Gallery from './modules/gallery.js';
 // DOM //
 // MENU
+const list = document.querySelector(".list").offsetTop
+
 
 listItems.forEach((item) => {
   item.addEventListener('click', () => {
     menu(item.id);
   });
 });
+
+window.addEventListener("scroll", () => {
+  if(window.pageYOffset > list ) {
+    moveMenu(true);
+
+  } else {
+    moveMenu(false);
+  }
+})
 
 // ABOUT
 function aboutAnimation() {
