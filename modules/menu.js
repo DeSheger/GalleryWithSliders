@@ -12,6 +12,7 @@ function moveMenu(bool) {
     menu.style.background = "white";
     menu.style.padding = "0 10%";
     menu.style.color = "black";
+    menu.style.boxShadow = "0 2px 4px black";
   }
   else {
     menu.style.position = "static";
@@ -26,6 +27,7 @@ function moveMenu(bool) {
     menu.style.padding = "5%";
     menu.style.borderRadius = "none";
     menu.style.color = "#ececec";
+    menu.style.boxShadow = "none";
   }
 }
 
